@@ -3,41 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EEDACB5F262E08210028F85E /* serialDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB4C262E081F0028F85E /* serialDetectorApp.swift */; };
+		EE020F372631F88E004E7661 /* Suffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE020F362631F828004E7661 /* Suffix.swift */; };
 		EEDACB60262E08210028F85E /* serialDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB4C262E081F0028F85E /* serialDetectorApp.swift */; };
-		EEDACB61262E08210028F85E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB4D262E081F0028F85E /* ContentView.swift */; };
-		EEDACB62262E08210028F85E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB4D262E081F0028F85E /* ContentView.swift */; };
-		EEDACB63262E08210028F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDACB4E262E08210028F85E /* Assets.xcassets */; };
+		EEDACB62262E08210028F85E /* SerialPortListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB4D262E081F0028F85E /* SerialPortListView.swift */; };
 		EEDACB64262E08210028F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDACB4E262E08210028F85E /* Assets.xcassets */; };
+		EEDACB73262EEAD80028F85E /* View+SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB72262EEAD70028F85E /* View+SoundEffect.swift */; };
+		EEDACB76262F22280028F85E /* copy.wav in Resources */ = {isa = PBXBuildFile; fileRef = EEDACB75262F22280028F85E /* copy.wav */; };
+		EEDACB8B262F64B30028F85E /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB8A262F64B30028F85E /* StatusBarController.swift */; };
+		EEDACB8E262F65180028F85E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB8D262F65180028F85E /* AppDelegate.swift */; };
+		EEDACB92262F663F0028F85E /* SerialPortInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB91262F663F0028F85E /* SerialPortInspectable.swift */; };
+		EEDACB95262F668E0028F85E /* SerialPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB94262F668E0028F85E /* SerialPort.swift */; };
+		EEDACB99262F66B40028F85E /* SerialPortListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB98262F66B40028F85E /* SerialPortListViewModel.swift */; };
+		EEDACB9C262F673D0028F85E /* StringPastboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACB9B262F673D0028F85E /* StringPastboard.swift */; };
+		EEDACBA1262FFC210028F85E /* ORSSerial in Frameworks */ = {isa = PBXBuildFile; productRef = EEDACBA0262FFC210028F85E /* ORSSerial */; };
+		EEDACBA4262FFC7B0028F85E /* SerialPortConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBA3262FFC7B0028F85E /* SerialPortConsoleView.swift */; };
+		EEDACBB926303BB20028F85E /* SerializedStored.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBAF26303A4D0028F85E /* SerializedStored.swift */; };
+		EEDACBBA26303BB20028F85E /* Environment+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBB026303A6C0028F85E /* Environment+Settings.swift */; };
+		EEDACBBB26303BB20028F85E /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBB226303BA90028F85E /* SettingsStore.swift */; };
+		EEDACBBF26314AFB0028F85E /* BaudRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBBE26314AFA0028F85E /* BaudRate.swift */; };
+		EEDACBC226314B150028F85E /* StopBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBC126314B150028F85E /* StopBits.swift */; };
+		EEDACBC526314B250028F85E /* Parity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBC426314B250028F85E /* Parity.swift */; };
+		EEDACBC826314B350028F85E /* FlowControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBC726314B350028F85E /* FlowControl.swift */; };
+		EEDACBCB26314B4A0028F85E /* FlowControlValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBCA26314B4A0028F85E /* FlowControlValue.swift */; };
+		EEDACBCE26314B590028F85E /* SerialPortConsoleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBCD26314B590028F85E /* SerialPortConsoleViewModel.swift */; };
+		EEDACBD226314CFA0028F85E /* String+Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBD126314CFA0028F85E /* String+Symbol.swift */; };
+		EEDACBD5263167E10028F85E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDACBD4263167E10028F85E /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE020F362631F828004E7661 /* Suffix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suffix.swift; sourceTree = "<group>"; };
 		EEDACB4C262E081F0028F85E /* serialDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serialDetectorApp.swift; sourceTree = "<group>"; };
-		EEDACB4D262E081F0028F85E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEDACB4D262E081F0028F85E /* SerialPortListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortListView.swift; sourceTree = "<group>"; };
 		EEDACB4E262E08210028F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EEDACB53262E08210028F85E /* serialDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = serialDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEDACB56262E08210028F85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEDACB5B262E08210028F85E /* serialDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = serialDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDACB5D262E08210028F85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEDACB5E262E08210028F85E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		EEDACB72262EEAD70028F85E /* View+SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SoundEffect.swift"; sourceTree = "<group>"; };
+		EEDACB75262F22280028F85E /* copy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = copy.wav; sourceTree = "<group>"; };
+		EEDACB8A262F64B30028F85E /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		EEDACB8D262F65180028F85E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEDACB91262F663F0028F85E /* SerialPortInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortInspectable.swift; sourceTree = "<group>"; };
+		EEDACB94262F668E0028F85E /* SerialPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPort.swift; sourceTree = "<group>"; };
+		EEDACB98262F66B40028F85E /* SerialPortListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortListViewModel.swift; sourceTree = "<group>"; };
+		EEDACB9B262F673D0028F85E /* StringPastboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringPastboard.swift; sourceTree = "<group>"; };
+		EEDACBA3262FFC7B0028F85E /* SerialPortConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortConsoleView.swift; sourceTree = "<group>"; };
+		EEDACBAF26303A4D0028F85E /* SerializedStored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializedStored.swift; sourceTree = "<group>"; };
+		EEDACBB026303A6C0028F85E /* Environment+Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Settings.swift"; sourceTree = "<group>"; };
+		EEDACBB226303BA90028F85E /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		EEDACBBE26314AFA0028F85E /* BaudRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaudRate.swift; sourceTree = "<group>"; };
+		EEDACBC126314B150028F85E /* StopBits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopBits.swift; sourceTree = "<group>"; };
+		EEDACBC426314B250028F85E /* Parity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parity.swift; sourceTree = "<group>"; };
+		EEDACBC726314B350028F85E /* FlowControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControl.swift; sourceTree = "<group>"; };
+		EEDACBCA26314B4A0028F85E /* FlowControlValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControlValue.swift; sourceTree = "<group>"; };
+		EEDACBCD26314B590028F85E /* SerialPortConsoleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPortConsoleViewModel.swift; sourceTree = "<group>"; };
+		EEDACBD126314CFA0028F85E /* String+Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Symbol.swift"; sourceTree = "<group>"; };
+		EEDACBD4263167E10028F85E /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EEDACB50262E08210028F85E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EEDACB58262E08210028F85E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDACBA1262FFC210028F85E /* ORSSerial in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,45 +79,48 @@
 		EEDACB46262E081F0028F85E = {
 			isa = PBXGroup;
 			children = (
-				EEDACB4B262E081F0028F85E /* Shared */,
-				EEDACB55262E08210028F85E /* iOS */,
 				EEDACB5C262E08210028F85E /* macOS */,
 				EEDACB54262E08210028F85E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EEDACB4B262E081F0028F85E /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				EEDACB4C262E081F0028F85E /* serialDetectorApp.swift */,
-				EEDACB4D262E081F0028F85E /* ContentView.swift */,
-				EEDACB4E262E08210028F85E /* Assets.xcassets */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
 		EEDACB54262E08210028F85E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EEDACB53262E08210028F85E /* serialDetector.app */,
 				EEDACB5B262E08210028F85E /* serialDetector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EEDACB55262E08210028F85E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				EEDACB56262E08210028F85E /* Info.plist */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
 		EEDACB5C262E08210028F85E /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				EEDACB5D262E08210028F85E /* Info.plist */,
+				EEDACB4C262E081F0028F85E /* serialDetectorApp.swift */,
+				EEDACB8D262F65180028F85E /* AppDelegate.swift */,
+				EEDACB8A262F64B30028F85E /* StatusBarController.swift */,
+				EEDACB98262F66B40028F85E /* SerialPortListViewModel.swift */,
+				EEDACB4D262E081F0028F85E /* SerialPortListView.swift */,
+				EEDACBCD26314B590028F85E /* SerialPortConsoleViewModel.swift */,
+				EEDACBA3262FFC7B0028F85E /* SerialPortConsoleView.swift */,
+				EEDACB9B262F673D0028F85E /* StringPastboard.swift */,
+				EEDACB72262EEAD70028F85E /* View+SoundEffect.swift */,
+				EEDACB91262F663F0028F85E /* SerialPortInspectable.swift */,
+				EEDACB94262F668E0028F85E /* SerialPort.swift */,
+				EEDACBAF26303A4D0028F85E /* SerializedStored.swift */,
+				EEDACBB026303A6C0028F85E /* Environment+Settings.swift */,
+				EEDACBB226303BA90028F85E /* SettingsStore.swift */,
+				EEDACB75262F22280028F85E /* copy.wav */,
+				EEDACB4E262E08210028F85E /* Assets.xcassets */,
+				EEDACBD126314CFA0028F85E /* String+Symbol.swift */,
+				EE020F362631F828004E7661 /* Suffix.swift */,
+				EEDACBBE26314AFA0028F85E /* BaudRate.swift */,
+				EEDACBC126314B150028F85E /* StopBits.swift */,
+				EEDACBC426314B250028F85E /* Parity.swift */,
+				EEDACBC726314B350028F85E /* FlowControl.swift */,
+				EEDACBCA26314B4A0028F85E /* FlowControlValue.swift */,
+				EEDACBD4263167E10028F85E /* ActivityIndicator.swift */,
 				EEDACB5E262E08210028F85E /* macOS.entitlements */,
+				EEDACB5D262E08210028F85E /* Info.plist */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -93,23 +128,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EEDACB52262E08210028F85E /* serialDetector (iOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EEDACB67262E08210028F85E /* Build configuration list for PBXNativeTarget "serialDetector (iOS)" */;
-			buildPhases = (
-				EEDACB4F262E08210028F85E /* Sources */,
-				EEDACB50262E08210028F85E /* Frameworks */,
-				EEDACB51262E08210028F85E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "serialDetector (iOS)";
-			productName = "serialDetector (iOS)";
-			productReference = EEDACB53262E08210028F85E /* serialDetector.app */;
-			productType = "com.apple.product-type.application";
-		};
 		EEDACB5A262E08210028F85E /* serialDetector (macOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEDACB6A262E08210028F85E /* Build configuration list for PBXNativeTarget "serialDetector (macOS)" */;
@@ -123,6 +141,9 @@
 			dependencies = (
 			);
 			name = "serialDetector (macOS)";
+			packageProductDependencies = (
+				EEDACBA0262FFC210028F85E /* ORSSerial */,
+			);
 			productName = "serialDetector (macOS)";
 			productReference = EEDACB5B262E08210028F85E /* serialDetector.app */;
 			productType = "com.apple.product-type.application";
@@ -136,9 +157,6 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					EEDACB52262E08210028F85E = {
-						CreatedOnToolsVersion = 12.4;
-					};
 					EEDACB5A262E08210028F85E = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -153,51 +171,57 @@
 				Base,
 			);
 			mainGroup = EEDACB46262E081F0028F85E;
+			packageReferences = (
+				EEDACB9F262FFC210028F85E /* XCRemoteSwiftPackageReference "ORSSerialPort" */,
+			);
 			productRefGroup = EEDACB54262E08210028F85E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EEDACB52262E08210028F85E /* serialDetector (iOS) */,
 				EEDACB5A262E08210028F85E /* serialDetector (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EEDACB51262E08210028F85E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EEDACB63262E08210028F85E /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EEDACB59262E08210028F85E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EEDACB64262E08210028F85E /* Assets.xcassets in Resources */,
+				EEDACB76262F22280028F85E /* copy.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EEDACB4F262E08210028F85E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EEDACB61262E08210028F85E /* ContentView.swift in Sources */,
-				EEDACB5F262E08210028F85E /* serialDetectorApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EEDACB57262E08210028F85E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEDACB62262E08210028F85E /* ContentView.swift in Sources */,
+				EEDACBC526314B250028F85E /* Parity.swift in Sources */,
+				EEDACBB926303BB20028F85E /* SerializedStored.swift in Sources */,
+				EEDACB62262E08210028F85E /* SerialPortListView.swift in Sources */,
+				EEDACB8B262F64B30028F85E /* StatusBarController.swift in Sources */,
+				EEDACBD5263167E10028F85E /* ActivityIndicator.swift in Sources */,
+				EEDACBC226314B150028F85E /* StopBits.swift in Sources */,
+				EEDACBBF26314AFB0028F85E /* BaudRate.swift in Sources */,
+				EEDACBC826314B350028F85E /* FlowControl.swift in Sources */,
+				EEDACBBB26303BB20028F85E /* SettingsStore.swift in Sources */,
 				EEDACB60262E08210028F85E /* serialDetectorApp.swift in Sources */,
+				EEDACBA4262FFC7B0028F85E /* SerialPortConsoleView.swift in Sources */,
+				EEDACBD226314CFA0028F85E /* String+Symbol.swift in Sources */,
+				EEDACB92262F663F0028F85E /* SerialPortInspectable.swift in Sources */,
+				EEDACB95262F668E0028F85E /* SerialPort.swift in Sources */,
+				EE020F372631F88E004E7661 /* Suffix.swift in Sources */,
+				EEDACB99262F66B40028F85E /* SerialPortListViewModel.swift in Sources */,
+				EEDACB8E262F65180028F85E /* AppDelegate.swift in Sources */,
+				EEDACBCE26314B590028F85E /* SerialPortConsoleViewModel.swift in Sources */,
+				EEDACB9C262F673D0028F85E /* StringPastboard.swift in Sources */,
+				EEDACBCB26314B4A0028F85E /* FlowControlValue.swift in Sources */,
+				EEDACBBA26303BB20028F85E /* Environment+Settings.swift in Sources */,
+				EEDACB73262EEAD80028F85E /* View+SoundEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,57 +339,13 @@
 			};
 			name = Release;
 		};
-		EEDACB68262E08210028F85E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AVSMHN95G3;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.khb.serialDetector;
-				PRODUCT_NAME = serialDetector;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EEDACB69262E08210028F85E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AVSMHN95G3;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.khb.serialDetector;
-				PRODUCT_NAME = serialDetector;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		EEDACB6B262E08210028F85E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AVSMHN95G3;
@@ -390,6 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = AVSMHN95G3;
@@ -420,15 +401,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EEDACB67262E08210028F85E /* Build configuration list for PBXNativeTarget "serialDetector (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EEDACB68262E08210028F85E /* Debug */,
-				EEDACB69262E08210028F85E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		EEDACB6A262E08210028F85E /* Build configuration list for PBXNativeTarget "serialDetector (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -439,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEDACB9F262FFC210028F85E /* XCRemoteSwiftPackageReference "ORSSerialPort" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/armadsen/ORSSerialPort";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEDACBA0262FFC210028F85E /* ORSSerial */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEDACB9F262FFC210028F85E /* XCRemoteSwiftPackageReference "ORSSerialPort" */;
+			productName = ORSSerial;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EEDACB47262E081F0028F85E /* Project object */;
 }
